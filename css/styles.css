@@ -222,6 +222,10 @@ display: flex;
 
 /*-- backdrop--*/
 .backdrop {
+
+/*overflow: auto;
+
+  overflow-y: scroll; */
   position: fixed;
   top: 0;
   left: 0;
@@ -247,6 +251,9 @@ display: flex;
 
 /*===modal===*/
 .modal {
+
+
+ 
   width: 408px;
   min-height: 584px;
   background: var(--DAIRY, #FCFCFC);
@@ -601,23 +608,28 @@ display: flex;
     .mobile-menu-container {
       position: relative;
     }
-  
+  .mobile-menu-close-btn-icon{color: #2E2F42;}
     .mobile-menu-close-btn {
       position: absolute;
       top: 24px;
       right: 24px;
-      background-color: transparent;
+      background-color:transparent;
       border: none;
       padding: 0;
       line-height: 0;
-  
+ /* fill:  #E7E9FC;
+stroke-width: 1px;
+  stroke:  #2E2F42;
+  opacity: 0.1;*/
+
+
       width: 24px;
       height: 24px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: var(--CORNFLOWER, #E7E9FC);
+     /* background-color: var(--CORNFLOWER, #E7E9FC); */
       border: 1px solid rgba(0, 0, 0, 0.1);
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -651,6 +663,7 @@ margin-left: 0;}
   
 .page-mobile-menu-addres{display: flex;
 margin-top: 168px;
+.mobile-menu-addres{font-style: normal;}
 
 }
 .mobile-list-adres{display: flex;
